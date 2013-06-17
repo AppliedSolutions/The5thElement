@@ -6,9 +6,9 @@
 
 body {
 	margin: 0;
-	font-family: sans-serif;
-	font-size: 10pt;
-	color: #cccccc;
+	font-family: "arial", monospace;
+	font-size: 12pt;
+	/*color: #cccccc;*/
 }
 
 #left_panel {
@@ -18,26 +18,28 @@ body {
 	bottom: 0px;
 	overflow: hidden;
 	width: 150px;
+	height: 100%;
 	background-color: rgba(255, 255, 255, 0.6);
 	box-shadow: 0px 0px 35px rgb(182, 182, 182);
 }
 
 .section {
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
 	min-height: 700px;
 	overflow: auto;
 	padding-left: 300px;
 	padding-top:10px;
 	padding-bottom: 10px;
 	padding-right: 10px;
+	/*box-shadow: inset 1px -9px 20px -6px #000;*/
 }
 
 #Home{
-	background-image: url("../images/Home.jpg");
+	/*background-image: url("../images/Home.jpg");*/
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
-	box-shadow: inset 1px -9px 20px -6px #000;
+
 }
  
 #HomeContents {
@@ -50,13 +52,13 @@ body {
 	height: 300px;
 	color: #555555;
 	background-color:rgba(255,255,255,0.8);
-	font-size: 14pt;
+	/*font-size: 14pt;*/
 	overflow: hidden;
 	padding: 25px;
 }
 
 #Projects{
-	background-image: url("../images/bkg-grid.png");
+	/*background-image: url("../images/bkg-grid.png");*/
 	background-repeat: repeat;
 	background-size: 10px;
 }
@@ -86,13 +88,13 @@ body {
 
 .AllProjectContents, .AllProjectImages {
 	overflow:hidden;
-	width:304px;
+	width:330px;
 	height: 315px;
 	float:left;
 	margin:40px;
 	line-height: 1.7;
-	font-size: 12pt;
-	background-color: #ffffff;
+	/*font-size: 12pt;*/
+	background-color:rgba(255,255,255,0.8);
 }
 
 .AllProjectImages {
@@ -101,6 +103,14 @@ body {
 
 .AllProjectContents {
 	color: #222222;
+	margin-left: 0px;
+	font-size: 10pt;
+}
+
+.AllProjectContents h2 {
+	text-align: center;
+	font-size: 14pt;
+	margin:0px;
 }
 
 .PrevProject, .NextProject {
@@ -181,6 +191,24 @@ body {
 	font-weight: bold;
 	padding: 8px;
 	border-left: 6px solid #d91844;
+}
+
+.submenu-list {
+	background-color: #f9f9f9;
+	/*margin-left: 40px;*/
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 10pt;
+	color: #aaaaaa;
+	padding: 5px;
+	list-style: none;
+	opacity: 0.8;
+	text-align:center;	
+	display: none;
+}
+
+.submenu-item {
+	padding-bottom: 5px;
 }
 
 

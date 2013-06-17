@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/colorbox.css">
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-		 <!-- <script type="text/javascript" src="jquery-ui-1.8.18.custom.min.js"></script>
-		<script type="text/javascript" src="jquery.smooth-scroll.min.js"></script> -->
-		<!-- // <script type="text/javascript" src="lightbox.js"></script> -->
 		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script> 
 		<script type="text/javascript" src="js/scripts.js"></script>
+
+		<title>The 5th Element</title>
 
 	</head>
 
 	<body>
 		<div id="left_panel">
 			<div id="logo">
-				<span class="fake-link"><img id="logo-image" src="images/diamond.png"></span>
+				<span class="fake-link"><img id="logo-image" src="images/diamond.png" onClick="hideSubMenu();"></span>
 			</div>
 			<div id="nav">
-				<ul id="menu">
-					<span class="fake-link"><li id="About-menu-item" class="menu-item">About</li></span>
-					<span class="fake-link"><li id="Services-menu-item" class="menu-item">Services</li></span>
-					<span class="fake-link"><li id="Projects-menu-item" class="menu-item">Projects</li></span>
-					<span class="fake-link"><li id="GetInTouch-menu-item" class="menu-item">Get In Touch</li></span>
-					
+				<ul id="menu" class="topmenu">
+					<li id="About" class="menu-item"  onClick="hideSubMenu();"><span class="fake-link">About</span></li>
+					<li id="Services" class="menu-item" onClick="hideSubMenu();"><span class="fake-link">Services</span></li>
+					<li id="Projects" class="menu-item" onClick="showSubMenu();">
+						<span class="fake-link">Projects
+							<ul  class="submenu-list">
+								<li id="LivingSpaces" class="submenu-item"><span class="fake-link">Living Spaces</span></li>
+								<li id="Outdoors" class="submenu-item"><span class="fake-link">Outdoors</span></li>
+								<li id="SocialSpaces" class="submenu-item"><span class="fake-link">SocialSpaces</span></li>
+								<li id="SpaceConception" class="submenu-item" ><span class="fake-link">SpaceConception</span></li>
+							</ul>
+						</span>
+					</li>
+					<li id="GetInTouch" class="menu-item" onClick="hideSubMenu();"><span class="fake-link">Get In Touch</span></li>
 				</ul>
 			</div>
 		</div>
-		<div class="section" id="Home">
+		<div class="section" id="HomeSection">
 			<div id="HomeContents">
 				<h1>Home page contents</h1>
 				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			</div>
 		</div>
-		<div class="section" id="About">
+		<div class="section" id="AboutSection">
 			<div id="AboutContents" style="margin: 100px;">
 			</div>
 		</div>
-		<div class="section" id="Services">
+		<div class="section" id="ServicesSection">
 			Services page contents
 		</div>
-		<div class="section" id="Projects">
+		<div class="section" id="ProjectsSection">
 			<div id="ProjectContents">
 				<div class="PrevProject">
 					<img src="images/prev.jpg">
@@ -51,77 +55,226 @@
 				<div id="ProjectSlides">
 					<div class="AllProjects" id="Project1" >
 						<div class="AllProjectImages" id="Project1Image">
-							<a class="proj1img" href="images/Services.jpg"  title="Project1 main image">
-		  						<img id="pimage1" src="images/Services.jpg"> 
+							<a class="proj1img" href="images/2BHKApartmentMumbai/Main2.jpg"  title="Project1 main image">
+		  						<img id="pimage1" src="images/2BHKApartmentMumbai/Main2.jpg"> 
 		  					</a>
-							<a class="proj1img" id="proj1img1a" href="images/Project1a.jpg" title="Project1 sit out">
-	  						</a>
-							<a class="proj1img" id="proj1img1b" href="images/Project1b.jpg" title="Project1 seating image">
+							<a class="proj1img" id="proj1img1a" href="images/2BHKApartmentMumbai/1.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1b" href="images/2BHKApartmentMumbai/2.jpg" title="Project1 seating image">
 		  					</a>
-							<a class="proj1img" id="proj1img1c" href="images/Project1c.jpg" title="Project1 bedroom image">
+							<a class="proj1img" id="proj1img1c" href="images/2BHKApartmentMumbai/3.jpg" title="Project1 bedroom image">
 		  					</a>
+		  					<a class="proj1img" id="proj1img1d" href="images/2BHKApartmentMumbai/4.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1e" href="images/2BHKApartmentMumbai/5.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1f" href="images/2BHKApartmentMumbai/6.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1g" href="images/2BHKApartmentMumbai/7.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1h" href="images/2BHKApartmentMumbai/8.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1i" href="images/2BHKApartmentMumbai/9.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1j" href="images/2BHKApartmentMumbai/10.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1k" href="images/2BHKApartmentMumbai/11.jpg" title="Project1 sit out">						</a>
+							<a class="proj1img" id="proj1img1l" href="images/2BHKApartmentMumbai/12.jpg" title="Project1 sit out">						</a>
 		  				</div>
 						<div class="AllProjectContents" id="Project1Content">
-							<h2>Project 1, Location 1 </h2>
+							<h2>2 BHK Apartment, Mumbai </h2>
 							"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+							<a title="View project 1 details" onClick="$('#pimage1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
 						</div>
 					</div>
 
 					<div class="AllProjects" id="Project2" >
 						<div class="AllProjectImages" id="Project2Image">
-							<a class="proj2img" href="images/Project2.jpg"  title="Project2 main image">
-								<img id="pimage2" src="images/Project2.jpg">
+							<a class="proj2img" href="images/BirchingtonRoad/Main4.jpg"  title="Project2 main image">
+								<img id="pimage2" src="images/BirchingtonRoad/Main4.jpg">
 		  					</a>
-							<a class="proj2img" id="proj2img2a" href="images/Project2a.jpg" title="Project2 sit out">
+							<a class="proj2img" id="proj2img2a" href="images/BirchingtonRoad/1.jpg" title="Project2 sit out">
 	  						</a>
-							<a class="proj2img" id="proj2img2b" href="images/Project2b.jpg"  title="Project2 seating image">
+							<a class="proj2img" id="proj2img2b" href="images/BirchingtonRoad/2.jpg"  title="Project2 seating image">
+		  					</a>
+		  					<a class="proj2img" id="proj2img2c" href="images/BirchingtonRoad/3.jpg"  title="Project2 seating image">
+		  					</a>
+		  					<a class="proj2img" id="proj2img2d" href="images/BirchingtonRoad/4.jpg"  title="Project2 seating image">
+		  					</a>
+		  					<a class="proj2img" id="proj2img2e" href="images/BirchingtonRoad/5.jpg"  title="Project2 seating image">
 		  					</a>
 						</div>
 
 						<div class="AllProjectContents" id="Project2Content">
-							<h2>Project 2, Location 2 </h2>
-							Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...
+							<h2>Birchington Road, London </h2>
+							Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...
+							<a title="View project 2 details" onClick="$('#pimage2').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
 						</div>
 					</div>
 					<div class="AllProjects" id="Project3" >
 						<div class="AllProjectImages" id="Project3Image">
-							<a class="proj3img" href="images/Project3.jpg"  title="Project3 main image">
-								<img id="pimage3" src="images/Project3.jpg">
+							<a class="proj3img" href="images/BucklandHillMaidstoneUK/Main5.jpg"  title="Project3 main image">
+								<img id="pimage3" src="images/BucklandHillMaidstoneUK/Main5.jpg">
 		  					</a>
-							<a class="proj3img" id="proj3img3a" href="images/Project3a.jpg" title="Project3 sit out">
+							<a class="proj3img" id="proj3img3a" href="images/BucklandHillMaidstoneUK/1.jpg" title="Project3 sit out">
 	  						</a>
-							<a class="proj3img" id="proj3img3b" href="images/Project3b.jpg"  title="Project3 seating image">
+							<a class="proj3img" id="proj3img3b" href="images/BucklandHillMaidstoneUK/2.jpg"  title="Project3 seating image">
 		  					</a>
+		  					<a class="proj3img" id="proj3img3c" href="images/BucklandHillMaidstoneUK/3.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3d" href="images/BucklandHillMaidstoneUK/4.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3e" href="images/BucklandHillMaidstoneUK/5.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3f" href="images/BucklandHillMaidstoneUK/6.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3g" href="images/BucklandHillMaidstoneUK/7.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3h" href="images/BucklandHillMaidstoneUK/8.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3i" href="images/BucklandHillMaidstoneUK/9.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3j" href="images/BucklandHillMaidstoneUK/10.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3k" href="images/BucklandHillMaidstoneUK/11.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3l" href="images/BucklandHillMaidstoneUK/12.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3m" href="images/BucklandHillMaidstoneUK/13.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3n" href="images/BucklandHillMaidstoneUK/14.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3p" href="images/BucklandHillMaidstoneUK/15.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3o" href="images/BucklandHillMaidstoneUK/16.jpg"  title="Project3 seating image">
+		  					</a>
+		  					<a class="proj3img" id="proj3img3q" href="images/BucklandHillMaidstoneUK/17.jpg"  title="Project3 seating image">
+		  					</a
+		  					<a class="proj3img" id="proj3img3r" href="images/BucklandHillMaidstoneUK/18.jpg"  title="Project3 seating image">
+		  					</a>
+
 						</div>
 
 						<div class="AllProjectContents" id="Project3Content">
-							<h2>Project 3, Location 3 </h2>
-							Project3 details here - Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -
+							<h2>Buckland Hill Maidstone, UK </h2>
+							Project3 details here - Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here 
+							<a title="View project 3 details" onClick="$('#pimage3').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
 						</div>
 					</div>
 					<div class="AllProjects" id="Project4" >
 						<div class="AllProjectImages" id="Project4Image">
-							<a class="proj4img" href="images/Project4.jpg"  title="Project4 main image">
-								<img id="pimage4" src="images/Project4.jpg">
+							<a class="proj4img" href="images/CreightonAvenueApartmentLondon/Main1.jpg"  title="Project4 main image">
+								<img id="pimage4" src="images/CreightonAvenueApartmentLondon/Main1.jpg">
 		  					</a>
-							<a class="proj4img" id="proj4img4a" href="images/Project4a.jpg" title="Project4 sit out">
+							<a class="proj4img" id="proj4img4a" href="images/CreightonAvenueApartmentLondon/1.jpg" title="Project4 sit out">
 	  						</a>
-							<a class="proj4img" id="proj4img4b" href="images/Project4b.jpg"  title="Project4 seating image">
+							<a class="proj4img" id="proj4img4b" href="images/CreightonAvenueApartmentLondon/2.jpg"  title="Project4 seating image">
 		  					</a>							
 						</div>
 
 						<div class="AllProjectContents" id="Project4Content">
-							<h2>Project 4, Location 4 </h2>
-							 Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : 
+							<h2>Creighton Avenue Apartment, London </h2>
+							 Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : 
+							 <a title="View project 4 details" onClick="$('#pimage4').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
 						</div>
 					</div>
+
+					<div class="AllProjects" id="Project5" >
+						<div class="AllProjectImages" id="Project5Image">
+							<a class="proj5img" href="images/CreightonAvenueHouseLondon/Main10.jpg"  title="Project5 main image">
+								<img id="pimage5" src="images/CreightonAvenueHouseLondon/Main10.jpg">
+		  					</a>
+							<a class="proj5img" id="proj5img1" href="images/CreightonAvenueHouseLondon/1.jpg" title="Project5 sit out">
+	  						</a>
+							<a class="proj5img" id="proj5img2" href="images/CreightonAvenueHouseLondon/2.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img3" href="images/CreightonAvenueHouseLondon/3.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img4" href="images/CreightonAvenueHouseLondon/4.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img5" href="images/CreightonAvenueHouseLondon/5.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img6" href="images/CreightonAvenueHouseLondon/6.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img7" href="images/CreightonAvenueHouseLondon/7.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img8" href="images/CreightonAvenueHouseLondon/8.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img9" href="images/CreightonAvenueHouseLondon/9.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img10" href="images/CreightonAvenueHouseLondon/10.jpg"  title="Project5 seating image">
+		  					</a>
+		  					<a class="proj5img" id="proj5img11" href="images/CreightonAvenueHouseLondon/11.jpg"  title="Project5 seating image">
+		  					</a>
+						</div>
+
+						<div class="AllProjectContents" id="Project5Content">
+							<h2>Creighton Avenue House, London </h2>
+							 Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : 
+							 <a title="View project 5 details" onClick="$('#pimage5').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+
+					<div class="AllProjects" id="Project6" >
+						<div class="AllProjectImages" id="Project6Image">
+							<a class="proj6img" href="images/GrevilleHallLondon/Main24.jpg"  title="Project6 main image">
+								<img id="pimage6" src="images/GrevilleHallLondon/Main24.jpg">
+		  					</a>
+							<a class="proj6img" id="proj6img1" href="images/GrevilleHallLondon/1.jpg" title="Project6 sit out">
+	  						</a>
+							<a class="proj6img" id="proj6img2" href="images/GrevilleHallLondon/2.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img3" href="images/GrevilleHallLondon/3.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img4" href="images/GrevilleHallLondon/4.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img6" href="images/GrevilleHallLondon/6.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img6" href="images/GrevilleHallLondon/6.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img7" href="images/GrevilleHallLondon/7.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img8" href="images/GrevilleHallLondon/8.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img9" href="images/GrevilleHallLondon/9.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img10" href="images/GrevilleHallLondon/10.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img11" href="images/GrevilleHallLondon/11.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img12" href="images/GrevilleHallLondon/12.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img13" href="images/GrevilleHallLondon/13.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img14" href="images/GrevilleHallLondon/14.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img15" href="images/GrevilleHallLondon/15.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img16" href="images/GrevilleHallLondon/16.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img17" href="images/GrevilleHallLondon/17.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img18" href="images/GrevilleHallLondon/18.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img19" href="images/GrevilleHallLondon/19.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img20" href="images/GrevilleHallLondon/20.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img21" href="images/GrevilleHallLondon/21.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img22" href="images/GrevilleHallLondon/22.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img23" href="images/GrevilleHallLondon/23.jpg"  title="Project6 seating image">
+		  					</a>
+		  					<a class="proj6img" id="proj6img24" href="images/GrevilleHallLondon/24.jpg"  title="Project6 seating image">
+		  					</a>
+							</div>
+
+						<div class="AllProjectContents" id="Project6Content">
+							<h2>Greville Hall, London </h2>
+							 Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : 
+							 <a title="View project 6 details" onClick="$('#pimage6').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>					
 				</div>		
 				<div class="NextProject">
 					<img src="images/next.jpg">
 				</div>
 			</div>
 		</div>
-		<div class="section" id="GetInTouch">
+		<div class="section" id="GetInTouchSection">
 			Contact Us page contents
 		</div>
 		<div id="footer">
