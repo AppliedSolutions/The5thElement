@@ -3,9 +3,12 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/colorbox.css">
+		<link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 		<script type="text/javascript" src="js/jquery.colorbox-min.js"></script> 
+		<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js" defer="defer"></script> 
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/carousel.js"></script>
 
 		<title>The 5th Element</title>
 
@@ -20,260 +23,431 @@
 				<ul id="menu" class="topmenu">
 					<li id="About" class="menu-item"  onClick="hideSubMenu();"><span class="fake-link">About</span></li>
 					<li id="Services" class="menu-item" onClick="hideSubMenu();"><span class="fake-link">Services</span></li>
-					<li id="Projects" class="menu-item" onClick="showSubMenu();">
-						<span class="fake-link">Projects
-							<ul  class="submenu-list">
-								<li id="LivingSpaces" class="submenu-item"><span class="fake-link">Living Spaces</span></li>
-								<li id="Outdoors" class="submenu-item"><span class="fake-link">Outdoors</span></li>
-								<li id="SocialSpaces" class="submenu-item"><span class="fake-link">SocialSpaces</span></li>
-								<li id="SpaceConception" class="submenu-item" ><span class="fake-link">SpaceConception</span></li>
-							</ul>
-						</span>
-					</li>
+					<li id="Projects" class="menu-item" onClick="showSubMenu();"><span class="fake-link">Projects</span></li>
+					<ul  class="submenu-list">
+						<li id="LivingSpaces" class="submenu-item"><span class="fake-link">Living Spaces</span></li>
+						<li id="Outdoors" class="submenu-item"><span class="fake-link">Outdoors</span></li>
+						<li id="WorkNSocialSpaces" class="submenu-item"><span class="fake-link">Work & SocialSpaces</span></li>
+					</ul>
 					<li id="GetInTouch" class="menu-item" onClick="hideSubMenu();"><span class="fake-link">Get In Touch</span></li>
 				</ul>
 			</div>
 		</div>
 		<div class="section" id="HomeSection">
-			<div id="HomeContents">
-				<h1>Home page contents</h1>
+			<div class="Contents">
+				<h2>Home page contents</h2>
 				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			</div>
 		</div>
 		<div class="section" id="AboutSection">
-			<div id="AboutContents" style="margin: 100px;">
+			<div class="Contents" >
+
+				<h2>About contents</h2>
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			</div>
 		</div>
 		<div class="section" id="ServicesSection">
-			Services page contents
+			<div class="Contents">
+			<h2>Services page contents</h2>
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</div>	
 		</div>
 		<div class="section" id="ProjectsSection">
-			<div id="ProjectContents">
-				<div class="PrevProject">
-					<img src="images/prev.jpg">
+			<div class="Contents">
+			<h2>Projects page contents</h2>
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			</div>	
+		</div>			
+		<div class="projsubsection" id="LivingSpacesSection">
+			<div class="wrapper">
+				<div class="slider">
+					<!-- 2BHKApartmentMumbai -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/2BHKApartmentMumbai/1.jpg" width="700" height="500" onClick="$('#mm1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces1" id="mm1" href="images/LivingSpaces/2BHKApartmentMumbai/1.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm2" href="images/LivingSpaces/2BHKApartmentMumbai/2.jpg" title="2BHKApartmentMumbai">
+                            </a>
+                            <a class="LivingSpaces1" id="mm3" href="images/LivingSpaces/2BHKApartmentMumbai/3.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm4" href="images/LivingSpaces/2BHKApartmentMumbai/4.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm5" href="images/LivingSpaces/2BHKApartmentMumbai/5.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm6" href="images/LivingSpaces/2BHKApartmentMumbai/6.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm7" href="images/LivingSpaces/2BHKApartmentMumbai/7.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm8" href="images/LivingSpaces/2BHKApartmentMumbai/8.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm9" href="images/LivingSpaces/2BHKApartmentMumbai/9.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm10" href="images/LivingSpaces/2BHKApartmentMumbai/10.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm11" href="images/LivingSpaces/2BHKApartmentMumbai/11.jpg" title="2BHKApartmentMumbai"></a>
+                            <a class="LivingSpaces1" id="mm12" href="images/LivingSpaces/2BHKApartmentMumbai/12.jpg" title="2BHKApartmentMumbai"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>2BHK Apartment Mahim, Mumbai</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#mm1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- BirchingtonRoad -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/BirchingtonRoad/1.jpg" width="700" height="500" onClick="$('#bcr1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces2" id="bcr1" href="images/LivingSpaces/BirchingtonRoad/1.jpg" title="BirchingtonRoad"></a>
+                            <a class="LivingSpaces2" id="bcr2" href="images/LivingSpaces/BirchingtonRoad/2.jpg" title="BirchingtonRoad"></a>
+                            <a class="LivingSpaces2" id="bcr3" href="images/LivingSpaces/BirchingtonRoad/3.jpg" title="BirchingtonRoad"></a>
+                            <a class="LivingSpaces2" id="bcr4" href="images/LivingSpaces/BirchingtonRoad/4.jpg" title="BirchingtonRoad"></a>
+                            <a class="LivingSpaces2" id="bcr5" href="images/LivingSpaces/BirchingtonRoad/5.jpg" title="BirchingtonRoad"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Birchington Road, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#bcr1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- BucklandHillMaidstoneUK -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/BucklandHillMaidstoneUK/1.jpg" width="700" height="500" onClick="$('#bhms1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces3" id="bhms1" href="images/LivingSpaces/BucklandHillMaidstoneUK/1.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms2" href="images/LivingSpaces/BucklandHillMaidstoneUK/2.jpg" title="BucklandHillMaidstoneUK">
+                            </a>
+                            <a class="LivingSpaces3" id="bhms3" href="images/LivingSpaces/BucklandHillMaidstoneUK/3.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms4" href="images/LivingSpaces/BucklandHillMaidstoneUK/4.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms5" href="images/LivingSpaces/BucklandHillMaidstoneUK/5.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms6" href="images/LivingSpaces/BucklandHillMaidstoneUK/6.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms7" href="images/LivingSpaces/BucklandHillMaidstoneUK/7.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms8" href="images/LivingSpaces/BucklandHillMaidstoneUK/8.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms9" href="images/LivingSpaces/BucklandHillMaidstoneUK/9.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms10" href="images/LivingSpaces/BucklandHillMaidstoneUK/10.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms11" href="images/LivingSpaces/BucklandHillMaidstoneUK/11.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms12" href="images/LivingSpaces/BucklandHillMaidstoneUK/12.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms13" href="images/LivingSpaces/BucklandHillMaidstoneUK/13.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms14" href="images/LivingSpaces/BucklandHillMaidstoneUK/14.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms15" href="images/LivingSpaces/BucklandHillMaidstoneUK/15.jpg" title="BucklandHillMaidstoneUK"></a>
+                            <a class="LivingSpaces3" id="bhms16" href="images/LivingSpaces/BucklandHillMaidstoneUK/16.jpg" title="BucklandHillMaidstoneUK"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Buckland Hill Maidstone, UK</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#bhms1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- CreightonAvenueApartmentLondon -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/CreightonAvenueApartmentLondon/1.jpg" width="700" height="500" onClick="$('#caa1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces4" id="caa1" href="images/LivingSpaces/CreightonAvenueApartmentLondon/1.jpg" title="CreightonAvenueApartmentLondon"></a>
+                            <a class="LivingSpaces4" id="caa2" href="images/LivingSpaces/CreightonAvenueApartmentLondon/2.jpg" title="CreightonAvenueApartmentLondon"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Creighton Avenue Apartment, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#caa1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- CreightonAvenueHouseLondon -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/CreightonAvenueHouseLondon/1.jpg" width="700" height="500" onClick="$('#cah2').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces5" id="cah2" href="images/LivingSpaces/CreightonAvenueHouseLondon/1.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah2" href="images/LivingSpaces/CreightonAvenueHouseLondon/2.jpg" title="CreightonAvenueHouseLondon">
+                            </a>
+                            <a class="LivingSpaces5" id="cah2" href="images/LivingSpaces/CreightonAvenueHouseLondon/3.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah4" href="images/LivingSpaces/CreightonAvenueHouseLondon/4.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah5" href="images/LivingSpaces/CreightonAvenueHouseLondon/5.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah6" href="images/LivingSpaces/CreightonAvenueHouseLondon/6.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah7" href="images/LivingSpaces/CreightonAvenueHouseLondon/7.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah8" href="images/LivingSpaces/CreightonAvenueHouseLondon/8.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah9" href="images/LivingSpaces/CreightonAvenueHouseLondon/9.jpg" title="CreightonAvenueHouseLondon"></a>
+                            <a class="LivingSpaces5" id="cah20" href="images/LivingSpaces/CreightonAvenueHouseLondon/10.jpg" title="CreightonAvenueHouseLondon"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Creighton Avenue House, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#cah2').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- GrevilleHallLondon -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/GrevilleHallLondon/1.jpg" width="700" height="500" onClick="$('#ghl1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces6" id="ghl1" href="images/LivingSpaces/GrevilleHallLondon/1.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl2" href="images/LivingSpaces/GrevilleHallLondon/2.jpg" title="GrevilleHallLondon">
+                            </a>
+                            <a class="LivingSpaces6" id="ghl3" href="images/LivingSpaces/GrevilleHallLondon/3.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl4" href="images/LivingSpaces/GrevilleHallLondon/4.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl5" href="images/LivingSpaces/GrevilleHallLondon/5.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl6" href="images/LivingSpaces/GrevilleHallLondon/6.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl7" href="images/LivingSpaces/GrevilleHallLondon/7.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl8" href="images/LivingSpaces/GrevilleHallLondon/8.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl9" href="images/LivingSpaces/GrevilleHallLondon/9.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl10" href="images/LivingSpaces/GrevilleHallLondon/10.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl11" href="images/LivingSpaces/GrevilleHallLondon/11.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl12" href="images/LivingSpaces/GrevilleHallLondon/12.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl13" href="images/LivingSpaces/GrevilleHallLondon/13.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl14" href="images/LivingSpaces/GrevilleHallLondon/14.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl15" href="images/LivingSpaces/GrevilleHallLondon/15.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl16" href="images/LivingSpaces/GrevilleHallLondon/16.jpg" title="GrevilleHallLondon"></a>
+                            <a class="LivingSpaces6" id="ghl17" href="images/LivingSpaces/GrevilleHallLondon/17.jpg" title="GrevilleHallLondon"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Greville Hall, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#ghl1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- TheCurveLondon	 -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/TheCurveLondon/1.jpg" width="700" height="500" onClick="$('#tcl1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces7" id="tcl1" href="images/LivingSpaces/TheCurveLondon/1.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl2" href="images/LivingSpaces/TheCurveLondon/2.jpg" title="TheCurveLondon">
+                            </a>
+                            <a class="LivingSpaces7" id="tcl3" href="images/LivingSpaces/TheCurveLondon/3.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl4" href="images/LivingSpaces/TheCurveLondon/4.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl5" href="images/LivingSpaces/TheCurveLondon/5.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl6" href="images/LivingSpaces/TheCurveLondon/6.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl7" href="images/LivingSpaces/TheCurveLondon/7.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl8" href="images/LivingSpaces/TheCurveLondon/8.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl9" href="images/LivingSpaces/TheCurveLondon/9.jpg" title="TheCurveLondon"></a>
+                            <a class="LivingSpaces7" id="tcl10" href="images/LivingSpaces/TheCurveLondon/10.jpg" title="TheCurveLondon"></a>
+                            
+                        </div>
+						<div class="slide-block">
+							<h4>The Curve, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#tcl1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- TheTeaFactoryLondon -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/TheTeaFactoryLondon/1.jpg" width="700" height="500" onClick="$('#ttf1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces8" id="ttf1" href="images/LivingSpaces/TheTeaFactoryLondon/1.jpg" title="TheTeaFactoryLondon"></a>
+                            <a class="LivingSpaces8" id="ttf2" href="images/LivingSpaces/TheTeaFactoryLondon/2.jpg" title="TheTeaFactoryLondon">
+                            </a>
+                            <a class="LivingSpaces8" id="ttf3" href="images/LivingSpaces/TheTeaFactoryLondon/3.jpg" title="TheTeaFactoryLondon"></a>
+                            <a class="LivingSpaces8" id="ttf4" href="images/LivingSpaces/TheTeaFactoryLondon/4.jpg" title="TheTeaFactoryLondon"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>The Tea Factory, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#ttf1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+					<!-- TheVestryLondon -->
+					<div class="rslide">
+						<a>
+							<img src="images/LivingSpaces/TheVestryLondon/1.jpg" width="700" height="500" onClick="$('#tvt1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="LivingSpaces9" id="tvt1" href="images/LivingSpaces/TheVestryLondon/1.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt2" href="images/LivingSpaces/TheVestryLondon/2.jpg" title="TheVestryLondon">
+                            </a>
+                            <a class="LivingSpaces9" id="tvt3" href="images/LivingSpaces/TheVestryLondon/3.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt4" href="images/LivingSpaces/TheVestryLondon/4.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt5" href="images/LivingSpaces/TheVestryLondon/5.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt6" href="images/LivingSpaces/TheVestryLondon/6.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt7" href="images/LivingSpaces/TheVestryLondon/7.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt8" href="images/LivingSpaces/TheVestryLondon/8.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt9" href="images/LivingSpaces/TheVestryLondon/9.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt10" href="images/LivingSpaces/TheVestryLondon/10.jpg" title="TheVestryLondon"></a>
+                            <a class="LivingSpaces9" id="tvt11" href="images/LivingSpaces/TheVestryLondon/11.jpg" title="TheVestryLondon"></a>
+							<a class="LivingSpaces9" id="tvt12" href="images/LivingSpaces/TheVestryLondon/12.jpg" title="TheVestryLondon"></a>
+							<a class="LivingSpaces9" id="tvt13" href="images/LivingSpaces/TheVestryLondon/13.jpg" title="TheVestryLondon"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>The Vestry, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#tvt1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
 				</div>
-				<div id="ProjectSlides">
-					<div class="AllProjects" id="Project1" >
-						<div class="AllProjectImages" id="Project1Image">
-							<a class="proj1img" href="images/2BHKApartmentMumbai/Main2.jpg"  title="Project1 main image">
-		  						<img id="pimage1" src="images/2BHKApartmentMumbai/Main2.jpg"> 
-		  					</a>
-							<a class="proj1img" id="proj1img1a" href="images/2BHKApartmentMumbai/1.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1b" href="images/2BHKApartmentMumbai/2.jpg" title="Project1 seating image">
-		  					</a>
-							<a class="proj1img" id="proj1img1c" href="images/2BHKApartmentMumbai/3.jpg" title="Project1 bedroom image">
-		  					</a>
-		  					<a class="proj1img" id="proj1img1d" href="images/2BHKApartmentMumbai/4.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1e" href="images/2BHKApartmentMumbai/5.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1f" href="images/2BHKApartmentMumbai/6.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1g" href="images/2BHKApartmentMumbai/7.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1h" href="images/2BHKApartmentMumbai/8.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1i" href="images/2BHKApartmentMumbai/9.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1j" href="images/2BHKApartmentMumbai/10.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1k" href="images/2BHKApartmentMumbai/11.jpg" title="Project1 sit out">						</a>
-							<a class="proj1img" id="proj1img1l" href="images/2BHKApartmentMumbai/12.jpg" title="Project1 sit out">						</a>
-		  				</div>
-						<div class="AllProjectContents" id="Project1Content">
-							<h2>2 BHK Apartment, Mumbai </h2>
-							"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-							<a title="View project 1 details" onClick="$('#pimage1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+			</div>
+		</div>	
+		<div class="projsubsection" id="OutdoorsSection">
+		    <div class="wrapper">
+				<div class="slider">
+					<!-- BirchingtonRoad -->
+					<div class="rslide">
+						<a>
+							<img src="images/Outdoors/BirchingtonRoad/1.jpg" width="700" height="500" onClick="$('#br1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="outdoors1" id="br1" href="images/Outdoors/BirchingtonRoad/1.jpg" title="Project1 sit out"></a>
+                            <a class="outdoors1" id="br2" href="images/Outdoors/BirchingtonRoad/2.jpg" title="Project1 seating image">
+                            </a>
+                        </div>
+						<div class="slide-block">
+							<h4>Birchen Road, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project 1 details" onClick="$('#br1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+						<!-- CreightonAvenue -->
+					<div class="rslide" >
+						<a><img src="images/Outdoors/CreightonAvenue/1.jpg" width="700" height="500" onClick="$('#ca1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="outdoors2" id="ca1" href="images/Outdoors/CreightonAvenue/1.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca2" href="images/Outdoors/CreightonAvenue/2.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca3" href="images/Outdoors/CreightonAvenue/3.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca4" href="images/Outdoors/CreightonAvenue/4.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca5" href="images/Outdoors/CreightonAvenue/5.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca6" href="images/Outdoors/CreightonAvenue/6.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca7" href="images/Outdoors/CreightonAvenue/7.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca8" href="images/Outdoors/CreightonAvenue/8.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca9" href="images/Outdoors/CreightonAvenue/9.jpg" title="Creighton Avenue"></a>
+                            <a class="outdoors2" id="ca10" href="images/Outdoors/CreightonAvenue/10.jpg" title="Creighton Avenue"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Creighton Avenue, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a title="View project 1 details" onClick="$('#ca1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+						<!-- EatonAvenue -->
+					<div class="rslide" >
+						<a><img src="images/Outdoors/EatonAvenue/1.jpg" width="700" height="500" onClick="$('#ea1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="outdoors3" id="ea1" href="images/Outdoors/EatonAvenue/1.jpg" title="Eaton Avenue"></a>
+                            <a class="outdoors3" id="ea2" href="images/Outdoors/EatonAvenue/2.jpg" title="Eaton Avenue"></a>
+                            <a class="outdoors3" id="ea3" href="images/Outdoors/EatonAvenue/3.jpg" title="Eaton Avenue"></a>
+                        </div>
+						<div class="slide-block">
+							<h4>Eaton Avenue, UK</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a title="View project 1 details" onClick="$('#ea1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
 						</div>
 					</div>
 
-					<div class="AllProjects" id="Project2" >
-						<div class="AllProjectImages" id="Project2Image">
-							<a class="proj2img" href="images/BirchingtonRoad/Main4.jpg"  title="Project2 main image">
-								<img id="pimage2" src="images/BirchingtonRoad/Main4.jpg">
-		  					</a>
-							<a class="proj2img" id="proj2img2a" href="images/BirchingtonRoad/1.jpg" title="Project2 sit out">
-	  						</a>
-							<a class="proj2img" id="proj2img2b" href="images/BirchingtonRoad/2.jpg"  title="Project2 seating image">
-		  					</a>
-		  					<a class="proj2img" id="proj2img2c" href="images/BirchingtonRoad/3.jpg"  title="Project2 seating image">
-		  					</a>
-		  					<a class="proj2img" id="proj2img2d" href="images/BirchingtonRoad/4.jpg"  title="Project2 seating image">
-		  					</a>
-		  					<a class="proj2img" id="proj2img2e" href="images/BirchingtonRoad/5.jpg"  title="Project2 seating image">
-		  					</a>
-						</div>
-
-						<div class="AllProjectContents" id="Project2Content">
-							<h2>Birchington Road, London </h2>
-							Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...Project2 details ...
-							<a title="View project 2 details" onClick="$('#pimage2').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
-						</div>
-					</div>
-					<div class="AllProjects" id="Project3" >
-						<div class="AllProjectImages" id="Project3Image">
-							<a class="proj3img" href="images/BucklandHillMaidstoneUK/Main5.jpg"  title="Project3 main image">
-								<img id="pimage3" src="images/BucklandHillMaidstoneUK/Main5.jpg">
-		  					</a>
-							<a class="proj3img" id="proj3img3a" href="images/BucklandHillMaidstoneUK/1.jpg" title="Project3 sit out">
-	  						</a>
-							<a class="proj3img" id="proj3img3b" href="images/BucklandHillMaidstoneUK/2.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3c" href="images/BucklandHillMaidstoneUK/3.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3d" href="images/BucklandHillMaidstoneUK/4.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3e" href="images/BucklandHillMaidstoneUK/5.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3f" href="images/BucklandHillMaidstoneUK/6.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3g" href="images/BucklandHillMaidstoneUK/7.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3h" href="images/BucklandHillMaidstoneUK/8.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3i" href="images/BucklandHillMaidstoneUK/9.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3j" href="images/BucklandHillMaidstoneUK/10.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3k" href="images/BucklandHillMaidstoneUK/11.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3l" href="images/BucklandHillMaidstoneUK/12.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3m" href="images/BucklandHillMaidstoneUK/13.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3n" href="images/BucklandHillMaidstoneUK/14.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3p" href="images/BucklandHillMaidstoneUK/15.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3o" href="images/BucklandHillMaidstoneUK/16.jpg"  title="Project3 seating image">
-		  					</a>
-		  					<a class="proj3img" id="proj3img3q" href="images/BucklandHillMaidstoneUK/17.jpg"  title="Project3 seating image">
-		  					</a
-		  					<a class="proj3img" id="proj3img3r" href="images/BucklandHillMaidstoneUK/18.jpg"  title="Project3 seating image">
-		  					</a>
-
-						</div>
-
-						<div class="AllProjectContents" id="Project3Content">
-							<h2>Buckland Hill Maidstone, UK </h2>
-							Project3 details here - Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here -Project3 details here 
-							<a title="View project 3 details" onClick="$('#pimage3').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
-						</div>
-					</div>
-					<div class="AllProjects" id="Project4" >
-						<div class="AllProjectImages" id="Project4Image">
-							<a class="proj4img" href="images/CreightonAvenueApartmentLondon/Main1.jpg"  title="Project4 main image">
-								<img id="pimage4" src="images/CreightonAvenueApartmentLondon/Main1.jpg">
-		  					</a>
-							<a class="proj4img" id="proj4img4a" href="images/CreightonAvenueApartmentLondon/1.jpg" title="Project4 sit out">
-	  						</a>
-							<a class="proj4img" id="proj4img4b" href="images/CreightonAvenueApartmentLondon/2.jpg"  title="Project4 seating image">
-		  					</a>							
-						</div>
-
-						<div class="AllProjectContents" id="Project4Content">
-							<h2>Creighton Avenue Apartment, London </h2>
-							 Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : Project 4 description : 
-							 <a title="View project 4 details" onClick="$('#pimage4').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
-						</div>
-					</div>
-
-					<div class="AllProjects" id="Project5" >
-						<div class="AllProjectImages" id="Project5Image">
-							<a class="proj5img" href="images/CreightonAvenueHouseLondon/Main10.jpg"  title="Project5 main image">
-								<img id="pimage5" src="images/CreightonAvenueHouseLondon/Main10.jpg">
-		  					</a>
-							<a class="proj5img" id="proj5img1" href="images/CreightonAvenueHouseLondon/1.jpg" title="Project5 sit out">
-	  						</a>
-							<a class="proj5img" id="proj5img2" href="images/CreightonAvenueHouseLondon/2.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img3" href="images/CreightonAvenueHouseLondon/3.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img4" href="images/CreightonAvenueHouseLondon/4.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img5" href="images/CreightonAvenueHouseLondon/5.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img6" href="images/CreightonAvenueHouseLondon/6.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img7" href="images/CreightonAvenueHouseLondon/7.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img8" href="images/CreightonAvenueHouseLondon/8.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img9" href="images/CreightonAvenueHouseLondon/9.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img10" href="images/CreightonAvenueHouseLondon/10.jpg"  title="Project5 seating image">
-		  					</a>
-		  					<a class="proj5img" id="proj5img11" href="images/CreightonAvenueHouseLondon/11.jpg"  title="Project5 seating image">
-		  					</a>
-						</div>
-
-						<div class="AllProjectContents" id="Project5Content">
-							<h2>Creighton Avenue House, London </h2>
-							 Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : 
-							 <a title="View project 5 details" onClick="$('#pimage5').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
-						</div>
-					</div>
-
-					<div class="AllProjects" id="Project6" >
-						<div class="AllProjectImages" id="Project6Image">
-							<a class="proj6img" href="images/GrevilleHallLondon/Main24.jpg"  title="Project6 main image">
-								<img id="pimage6" src="images/GrevilleHallLondon/Main24.jpg">
-		  					</a>
-							<a class="proj6img" id="proj6img1" href="images/GrevilleHallLondon/1.jpg" title="Project6 sit out">
-	  						</a>
-							<a class="proj6img" id="proj6img2" href="images/GrevilleHallLondon/2.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img3" href="images/GrevilleHallLondon/3.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img4" href="images/GrevilleHallLondon/4.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img6" href="images/GrevilleHallLondon/6.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img6" href="images/GrevilleHallLondon/6.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img7" href="images/GrevilleHallLondon/7.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img8" href="images/GrevilleHallLondon/8.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img9" href="images/GrevilleHallLondon/9.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img10" href="images/GrevilleHallLondon/10.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img11" href="images/GrevilleHallLondon/11.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img12" href="images/GrevilleHallLondon/12.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img13" href="images/GrevilleHallLondon/13.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img14" href="images/GrevilleHallLondon/14.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img15" href="images/GrevilleHallLondon/15.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img16" href="images/GrevilleHallLondon/16.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img17" href="images/GrevilleHallLondon/17.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img18" href="images/GrevilleHallLondon/18.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img19" href="images/GrevilleHallLondon/19.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img20" href="images/GrevilleHallLondon/20.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img21" href="images/GrevilleHallLondon/21.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img22" href="images/GrevilleHallLondon/22.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img23" href="images/GrevilleHallLondon/23.jpg"  title="Project6 seating image">
-		  					</a>
-		  					<a class="proj6img" id="proj6img24" href="images/GrevilleHallLondon/24.jpg"  title="Project6 seating image">
-		  					</a>
-							</div>
-
-						<div class="AllProjectContents" id="Project6Content">
-							<h2>Greville Hall, London </h2>
-							 Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : Project  description : 
-							 <a title="View project 6 details" onClick="$('#pimage6').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
-						</div>
-					</div>					
-				</div>		
-				<div class="NextProject">
-					<img src="images/next.jpg">
 				</div>
 			</div>
 		</div>
+		<div class="projsubsection" id="WorkNSocialSpacesSection">
+			<div class="wrapper">
+				<div class="slider">
+					<!-- Resto Bar Dubai -->
+					<div class="rslide"> 
+						<a>
+							<img src="images/WorkNSocialSpaces/RestoBarDubai/1.jpg" width="700" height="500" onClick="$('#restodubai1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="worksocial1" id="restodubai1" href="images/WorkNSocialSpaces/RestoBarDubai/1.jpg" title="Resto Bar Dubai"></a>
+                            <a class="worksocial1" id="restodubai2" href="images/WorkNSocialSpaces/RestoBarDubai/2.jpg" title="Resto Bar Dubai">
+                            </a>
+                            <a class="worksocial1" id="restodubai3" href="images/WorkNSocialSpaces/RestoBarDubai/3.jpg" title="Resto Bar Dubai">
+                            </a>
+                            <a class="worksocial1" id="restodubai4" href="images/WorkNSocialSpaces/RestoBarDubai/4.jpg" title="Resto Bar Dubai">
+                            </a>
+                        </div>
+						<div class="slide-block">
+							<h4>Resto Bar, Dubai</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project photos" onClick="$('#restodubai1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+						<!-- Space Conception -->
+					<div class="rslide" >
+						<a><img src="images/WorkNSocialSpaces/SpaceConception/1.jpg" width="700" height="500" /></a>
+						<div class="AllProjectImages" >
+                            <a class="worksocial2" id="sc1" href="images/WorkNSocialSpaces/SpaceConception/1.jpg" title="SpaceConception"></a>
+                            <a class="worksocial2" id="sc2" href="images/WorkNSocialSpaces/SpaceConception/2.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc3" href="images/WorkNSocialSpaces/SpaceConception/3.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc4" href="images/WorkNSocialSpaces/SpaceConception/4.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc5" href="images/WorkNSocialSpaces/SpaceConception/5.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc6" href="images/WorkNSocialSpaces/SpaceConception/6.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc7" href="images/WorkNSocialSpaces/SpaceConception/7.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc8" href="images/WorkNSocialSpaces/SpaceConception/8.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc9" href="images/WorkNSocialSpaces/SpaceConception/9.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc10" href="images/WorkNSocialSpaces/SpaceConception/10.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc11" href="images/WorkNSocialSpaces/SpaceConception/11.jpg" title="SpaceConception">
+                            </a>
+                            <a class="worksocial2" id="sc12" href="images/WorkNSocialSpaces/SpaceConception/12.jpg" title="SpaceConception">
+                            </a>
+                        </div>
+						<div class="slide-block">
+							<h4>Space Conception,Mahim Mumbai</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a title="View project photos" onClick="$('#sc1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+
+					<!-- Candy Bar Soho -->
+					<div class="rslide"> 
+						<a>
+							<img src="images/WorkNSocialSpaces/CandyBarSoho/1.jpg" width="700" height="500" onClick="$('#candybar1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="worksocial3" id="candybar1" href="images/WorkNSocialSpaces/CandyBarSoho/1.jpg" title="Candy Bar Soho"></a>
+                            <a class="worksocial3" id="candybar2" href="images/WorkNSocialSpaces/CandyBarSoho/2.jpg" title="Candy Bar Soho">
+                            </a>
+                            <a class="worksocial3" id="candybar3" href="images/WorkNSocialSpaces/CandyBarSoho/3.jpg" title="Candy Bar Soho">
+                            </a>
+                            <a class="worksocial3" id="candybar4" href="images/WorkNSocialSpaces/CandyBarSoho/4.jpg" title="Candy Bar Soho">
+                            </a>
+                            <a class="worksocial3" id="candybar5" href="images/WorkNSocialSpaces/CandyBarSoho/5.jpg" title="Candy Bar Soho">
+                            </a>
+                            <a class="worksocial3" id="candybar6" href="images/WorkNSocialSpaces/CandyBarSoho/6.jpg" title="Candy Bar Soho">
+                            </a>
+                        </div>
+						<div class="slide-block">
+							<h4>Candy Bar, Soho, London</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project photos" onClick="$('#candybar1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+						<!-- Muscat Resto Bar -->
+					<div class="rslide"> 
+						<a>
+							<img src="images/WorkNSocialSpaces/Muscat/1.jpg" width="700" height="500" onClick="$('#muscat1').click();"/>
+						</a>
+						<div class="AllProjectImages" >
+                            <a class="worksocial4" id="muscat1" href="images/WorkNSocialSpaces/Muscat/1.jpg" title="Muscat Resto Bar"></a>
+                            <a class="worksocial4" id="muscat2" href="images/WorkNSocialSpaces/Muscat/2.jpg" title="Muscat Resto Bar">
+                            </a>
+                            <a class="worksocial4" id="muscat3" href="images/WorkNSocialSpaces/Muscat/3.jpg" title="Muscat Resto Bar">
+                            </a>
+                            <a class="worksocial4" id="muscat4" href="images/WorkNSocialSpaces/Muscat/4.jpg" title="Muscat Resto Bar">
+                            </a>
+                            <a class="worksocial4" id="muscat5" href="images/WorkNSocialSpaces/Muscat/5.jpg" title="Muscat Resto Bar">
+                            </a>
+                        </div>
+						<div class="slide-block">
+							<h4>Resto bar, Muscat</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .. </p>
+							<a title="View project photos" onClick="$('#muscat1').click();" style="cursor: pointer;text-decoration:underline;">Click here for more photos</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	
 		<div class="section" id="GetInTouchSection">
 			Contact Us page contents
 		</div>

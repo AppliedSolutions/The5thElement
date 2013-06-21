@@ -1,5 +1,5 @@
 .fake-link {
-	color: #cccccc;
+	/*color: #cccccc;*/
 	text-decoration: none;
 	cursor: pointer;	
 }
@@ -26,7 +26,7 @@ body {
 .section {
 	/*background-color: #f2f2f2;*/
 	min-height: 700px;
-	overflow: auto;
+	overflow: hidden;
 	padding-left: 300px;
 	padding-top:10px;
 	padding-bottom: 10px;
@@ -34,24 +34,79 @@ body {
 	/*box-shadow: inset 1px -9px 20px -6px #000;*/
 }
 
-#Home{
-	/*background-image: url("../images/Home.jpg");*/
+.projsubsection {
+	min-height: 700px;
+	overflow: auto;
+	/*padding: 10px;
+	padding-top:40px;*/
+	width:770px;
+	padding-left: 310px;
+	padding-top:60px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	background-image: url("../images/WorkNSocialSpaces/SpaceConception/Bckgrd.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	/*opacity: 0.5;*/
+
+}
+
+
+#HomeSection{
+	background-image: url("../images/LivingSpaces/CreightonAvenueHouseLondon/1.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 
 }
  
-#HomeContents {
+#AboutSection{
+	background-image: url("../images/LivingSpaces/BucklandHillMaidstoneUK/1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+#ServicesSection{
+	background-image: url("../images/LivingSpaces/TheVestryLondon/1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+#ProjectsSection{
+	background-image: url("../images/WorkNSocialSpaces/SpaceConception/2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+#GetInTouchSection{
+	background-image: url("../images/Outdoors/CreightonAvenue/1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+.Contents {
 	width: 700px;
-	top:150px;
-	left:300px;
-	position:absolute; 
+	top:200px;
+	/*left:300px;*/
+	/*position:absolute; */
+	position: relative;
 	margin: 0px;
-	opacity:0.2;
-	height: 300px;
-	color: #555555;
-	background-color:rgba(255,255,255,0.8);
+	/*opacity:0.2;*/
+	height: 200px;
+	/*color: #555555;*/
+	/*background-color:rgba(255,255,255,0.8);*/
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border-radius: 4px;
 	/*font-size: 14pt;*/
 	overflow: hidden;
 	padding: 25px;
@@ -70,78 +125,6 @@ body {
 	background-color:rgba(255,255,255,0.8);
 }
 
-#ProjectSlides{
-	margin: 0px;
-	padding: 0px;
-	width: 780px;
-	height:450px;
-	overflow: hidden;
-	float:left;
-}
-
-.AllProjects {
-	width:780px ;
-	height:450px;
-	float:left;
-	background-color:rgba(255,255,255,0.8);
-}
-
-.AllProjectContents, .AllProjectImages {
-	overflow:hidden;
-	width:330px;
-	height: 315px;
-	float:left;
-	margin:40px;
-	line-height: 1.7;
-	/*font-size: 12pt;*/
-	background-color:rgba(255,255,255,0.8);
-}
-
-.AllProjectImages {
-	cursor: pointer;
-}
-
-.AllProjectContents {
-	color: #222222;
-	margin-left: 0px;
-	font-size: 10pt;
-}
-
-.AllProjectContents h2 {
-	text-align: center;
-	font-size: 14pt;
-	margin:0px;
-}
-
-.PrevProject, .NextProject {
-	width: 40px;
-	height: 40px;
-	padding-top: 205px;
-	padding-bottom: 205px;
-	float: left;
-	cursor: pointer;
-	background-color: #ffffff;
-}
-
-/*#ProjectNav{
-	clear: both;
-	width: 100%;
-	height: 25px;
-}
-
-#ProjectNavList{
-	list-style: none;
-	text-decoration: none;
-	text-align: center;
-	display: 'inlie-block';
-	color: #222222;
-}
-.ProjectNavListItem {
-	float:left;
-	padding-left:10px;
-	padding-right:10px;
-}
-*/
 #logo {
 	overflow: hidden;
 	text-align: center;
@@ -167,7 +150,8 @@ body {
 	background-color: #f9f9f9;
 	margin-bottom: 5px;
 	font-size: 14pt;
-	color: #aaaaaa;
+	/*color: #aaaaaa;*/
+	color: #6b6b64;
 	padding: 8px;
 	opacity: 0.8;
 	
@@ -176,6 +160,7 @@ body {
 .menu-item:hover  {
 	background-color: #f9f9f9;
 	color: #d91844;
+	/*color:#2b2b28;*/
 	margin-bottom: 5px;
 	font-size: 14pt;
 	font-weight: bold;
@@ -186,6 +171,7 @@ body {
 .menu-item-selected  {
 	background-color: #f9f9f9;
 	color: #d91844;
+	/*color: #2b2b28;*/
 	margin-bottom: 5px;
 	font-size: 14pt;
 	font-weight: bold;
@@ -194,21 +180,53 @@ body {
 }
 
 .submenu-list {
-	background-color: #f9f9f9;
+	background-color: #fcfcfc;
 	/*margin-left: 40px;*/
 	margin-top: 5px;
 	margin-bottom: 5px;
 	font-size: 10pt;
-	color: #aaaaaa;
+	/*color: #aaaaaa;*/
+	color:#6b6b64;
 	padding: 5px;
 	list-style: none;
 	opacity: 0.8;
 	text-align:center;	
 	display: none;
 }
-
 .submenu-item {
+	/*background-color: #f9f9f9;
+	margin-bottom: 5px;
+	font-size: 8pt;
+	color: #aaaaaa;
+	padding: 8px;
+	opacity: 0.8;*/
 	padding-bottom: 5px;
+}
+
+.submenu-item:hover  {
+	/*background-color: #f9f9f9;*/
+	/*color: #d91844;*/
+	/*margin-bottom: 5px;*/
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 5px;
+	color: #d91844;
+	/*color: #2b2b28;*/
+	/*padding: 8px;*/
+	/*border-left: 6px solid #d91844;*/
+}
+
+.submenu-item-selected  {
+	/*background-color: #f9f9f9;*/
+	/*color: #d91844;*/
+	/*margin-bottom: 5px;*/
+	font-size: 12pt;
+	font-weight: bold;
+	padding-bottom: 5px;
+	color: #d91844;
+	/*color:#2b2b28;*/
+	/*padding: 8px;*/
+	/*border-left: 6px solid #d91844;*/
 }
 
 
@@ -242,4 +260,75 @@ body {
 	text-align: right;
 	padding: 5px 10px 5px 5px;
 }
+/*
+#ProjectSlides{
+	margin: 0px;
+	padding: 0px;
+	width: 780px;
+	height:450px;
+	overflow: hidden;
+	float:left;
+}
 
+.AllProjects {
+	width:780px ;
+	height:450px;
+	float:left;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.AllProjectContents, .AllProjectImages {
+	overflow:hidden;
+	width:330px;
+	height: 315px;
+	float:left;
+	margin:40px;
+	line-height: 1.7;
+	background-color:rgba(255,255,255,0.8);
+}
+
+.AllProjectImages {
+	cursor: pointer;
+}
+
+.AllProjectContents {
+	color: #222222;
+	margin-left: 0px;
+	font-size: 10pt;
+}
+
+.AllProjectContents h2 {
+	text-align: center;
+	font-size: 14pt;
+	margin:0px;
+}
+
+.PrevProject, .NextProject {
+	width: 40px;
+	height: 40px;
+	padding-top: 205px;
+	padding-bottom: 205px;
+	float: left;
+	cursor: pointer;
+	background-color: #ffffff;
+}
+
+#ProjectNav{
+	clear: both;
+	width: 100%;
+	height: 25px;
+}
+
+#ProjectNavList{
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	display: 'inlie-block';
+	color: #222222;
+}
+.ProjectNavListItem {
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+}
+*/
