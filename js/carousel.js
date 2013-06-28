@@ -16,9 +16,9 @@ $(function() {
 			},
 			scroll: {
 				items: 1,
-				timeoutDuration : 5000,
+				timeoutDuration : 3000,
 				onBefore: function(data) {
-					$('.slider').animate({ left: $('.wrapper').attr('left') });	
+					// $('.slider').animate({ left: $('.wrapper').attr('left') });	
 					//	find current and next slide
 					var currentSlide = $('.rslide.active', this),
 						nextSlide = data.items.visible,
@@ -39,7 +39,10 @@ $(function() {
 						width: _width * 0.9
 					});						
 				},
-				onAfter: function(data) {
+				// auto: {
+			 //        play: false
+    // 			},
+    				onAfter: function(data) {
 					//	show active slide block
 					data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
 				}
@@ -66,7 +69,7 @@ $(function() {
 				$(this).find( '.slide-block' ).hide();
 				$(this).find( '.rslide.active .slide-block' ).stop().fadeIn();
 			}
-		});
+		}).trigger("pause");
 	 
 		//	Handle click events
 		// $('.slider').children().click(function() {
