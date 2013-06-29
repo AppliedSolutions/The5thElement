@@ -13,13 +13,10 @@ function pageSection ( sectionTop , sectionBottom, sectionName, menuName, menuSt
 
 var sections = new Array();
 
-
+var activeSlider =null;
 
 $(document).ready(function(){
 
-	//$('#left_panel').animate({'left' : '+=2%'},2000);
-
-	// $('.Contents').animate({'marginLeft' : '-=10px', 'top':'+=10px', 'opacity':'1'},500);
 	initSections(sections);
 	$('#submenu-item').hide();
 
@@ -48,21 +45,6 @@ $(document).ready(function(){
 	$('.worksocial2').colorbox({rel:'group14'});
 	$('.worksocial3').colorbox({rel:'group15'});
 
-	// $("ul.topmenu > li").click(function(event) {
-	// 	event.preventDefault();
-	// 	str = $(this).attr("id");
-	// 	scrollToSection('#'+str, "#" + str+"Section");
-	// });
-
-	// $("ul.submenu-list > li").click(function() {
-
-	// 	str = $(this).attr("id");
-	// 	scrollToSubSection('#'+str, "#" + str+"Section");
-	// });
-
-	// $("#logo-image").click(function() {
-	// 	scrollToSection('#Home', "#HomeSection");
-	// });
 	$("#logo").click(function() {
 		scrollToSection(sections[0]);
 	});
@@ -106,12 +88,7 @@ function scrollToSection(sectionDetails) {
 		$(sectionDetails.parentList).addClass(sectionDetails.menuStyle);
 		$(sectionDetails.menuName ).removeClass(sectionDetails.menuStyle);
 		$(sectionDetails.menuName ).addClass(sectionDetails.menuSelectedStyle);
-		// $(document).animate({scrollTop:  sectionDetails.sectionTop}, 'slow');
 		$('body, html').animate({scrollTop:  sectionDetails.sectionTop}, 'slow');
-		// $.each($('.projsubsection'),function(){
-		// 	var subsection = $(this);
-		// 	$('#'+subsection.attr('id')).find('.slider').trigger("pause");
-		// });
 
 		$("#LivingSpacesSlider").trigger("pause");
 		$("#OutdoorsSlider").trigger("pause");
@@ -123,6 +100,106 @@ function scrollToSection(sectionDetails) {
 		}
 	}
 }
+
+
+function showSubMenu (){
+	$('.submenu-list').show('fast');		
+	$('ul.submenu-list > li').removeClass("submenu-item-selected");
+	$('ul.submenu-list > li').addClass("submenu-item");	
+}
+
+function hideSubMenu(){
+	$('ul.submenu-list > li').removeClass("submenu-item-selected");
+	$('ul.submenu-list > li').addClass("submenu-item");
+	$('.submenu-list').hide('fast');
+}
+
+
+
+
+$(document).bind('cbox_closed', function(){ 
+	 if($(activeSlider) != null)
+	 {
+	 	$(activeSlider)[0].style.width = '780px';
+	 	$(activeSlider).trigger("resume");
+	 }
+});
+
+	function initSections(sections){
+	sections[0] = new pageSection($("#HomeSection").offset().top, 
+									$("#AboutSection").offset().top,
+									"#HomeSection",
+									"#Home",
+									"menu-item",
+									"menu-item-selected",
+									"ul.topmenu > li",
+									null);
+
+	sections[1] = new pageSection($("#AboutSection").offset().top, 
+									$("#ServicesSection").offset().top,
+									"#AboutSection",
+									"#About",
+									"menu-item",
+									"menu-item-selected",
+									"ul.topmenu > li",
+									null);
+
+	sections[2] = new pageSection($("#ServicesSection").offset().top, 
+									$("#ProjectsSection").offset().top,
+									"#ServicesSection",
+									"#Services",
+									"menu-item",
+									"menu-item-selected",
+									"ul.topmenu > li",
+									null);
+
+	sections[3] = new pageSection($("#ProjectsSection").offset().top, 
+									$("#LivingSpacesSection").offset().top,
+									"#ProjectsSection",
+									"#Projects",
+									"menu-item",
+									"menu-item-selected",
+									"ul.topmenu > li",
+									null);
+
+	sections[4] = new pageSection($("#LivingSpacesSection").offset().top, 
+									$("#OutdoorsSection").offset().top,
+									"#LivingSpacesSection",
+									"#LivingSpaces",
+									"submenu-item",
+									"submenu-item-selected",
+									"ul.submenu-list > li",
+									"#LivingSpacesSlider");
+
+	sections[5] = new pageSection($("#OutdoorsSection").offset().top, 
+									$("#WorkNSocialSpacesSection").offset().top,
+									"#OutdoorsSection",
+									"#Outdoors",
+									"submenu-item",
+									"submenu-item-selected",
+									"ul.submenu-list > li",
+									"#OutdoorsSlider");
+
+	sections[6] = new pageSection($("#WorkNSocialSpacesSection").offset().top, 
+									$("#GetInTouchSection").offset().top,
+									"#WorkNSocialSpacesSection",
+									"#WorkNSocialSpaces",
+									"submenu-item",
+									"submenu-item-selected",
+									"ul.submenu-list > li",
+									"#WorkNSocialSpacesSlider");
+
+	sections[7] = new pageSection($("#GetInTouchSection").offset().top, 
+									9999999,
+									"#GetInTouchSection",
+									"#GetInTouch",
+									"menu-item",
+									"menu-item-selected",
+									"ul.topmenu > li",
+									null);
+}
+
+
 
 
 // $(window).scroll(function(){
@@ -201,99 +278,3 @@ function scrollToSection(sectionDetails) {
 // 	}
 // }
 
-
-function showSubMenu (){
-	$('.submenu-list').show('fast');			
-}
-
-function hideSubMenu(){
-	$('ul.submenu-list > li').removeClass("submenu-item-selected");
-	$('ul.submenu-list > li').addClass("submenu-item");
-	$('.submenu-list').hide('fast');
-}
-
-
-
-
-$(document).bind('cbox_closed', function(){ 
-	// var elementStyle = $.colorbox.element().style;
-	// if(elementStyle != null)
-	// 	elementStyle.width = "770px";
-	// 	elementStyle.position = "relative";
-	if($(".slider").style !=  null)
-		$(".slider").style.width = "770px";
-});
-
-	function initSections(sections){
-	sections[0] = new pageSection($("#HomeSection").offset().top, 
-									$("#AboutSection").offset().top,
-									"#HomeSection",
-									"#Home",
-									"menu-item",
-									"menu-item-selected",
-									"ul.topmenu > li",
-									null);
-
-	sections[1] = new pageSection($("#AboutSection").offset().top, 
-									$("#ServicesSection").offset().top,
-									"#AboutSection",
-									"#About",
-									"menu-item",
-									"menu-item-selected",
-									"ul.topmenu > li",
-									null);
-
-	sections[2] = new pageSection($("#ServicesSection").offset().top, 
-									$("#ProjectsSection").offset().top,
-									"#ServicesSection",
-									"#Services",
-									"menu-item",
-									"menu-item-selected",
-									"ul.topmenu > li",
-									null);
-
-	sections[3] = new pageSection($("#ProjectsSection").offset().top, 
-									$("#LivingSpacesSection").offset().top,
-									"#ProjectsSection",
-									"#Projects",
-									"menu-item",
-									"menu-item-selected",
-									"ul.topmenu > li",
-									null);
-
-	sections[4] = new pageSection($("#LivingSpacesSection").offset().top, 
-									$("#OutdoorsSection").offset().top,
-									"#LivingSpacesSection",
-									"#LivingSpaces",
-									"submenu-item",
-									"submenu-item-selected",
-									"ul.submenu-list > li",
-									"#LivingSpacesSlider");
-
-	sections[5] = new pageSection($("#OutdoorsSection").offset().top, 
-									$("#WorkNSocialSpacesSection").offset().top,
-									"#OutdoorsSection",
-									"#Outdoors",
-									"submenu-item",
-									"submenu-item-selected",
-									"ul.submenu-list > li",
-									"#OutdoorsSlider");
-
-	sections[6] = new pageSection($("#WorkNSocialSpacesSection").offset().top, 
-									$("#GetInTouchSection").offset().top,
-									"#WorkNSocialSpacesSection",
-									"#WorkNSocialSpaces",
-									"submenu-item",
-									"submenu-item-selected",
-									"ul.submenu-list > li",
-									"#WorkNSocialSpacesSlider");
-
-	sections[7] = new pageSection($("#GetInTouchSection").offset().top, 
-									9999999,
-									"#GetInTouchSection",
-									"#GetInTouch",
-									"menu-item",
-									"menu-item-selected",
-									"ul.topmenu > li",
-									null);
-}

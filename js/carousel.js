@@ -68,7 +68,8 @@ $(function() {
 				//	show first title block and hide the rest
 				$(this).find( '.slide-block' ).hide();
 				$(this).find( '.rslide.active .slide-block' ).stop().fadeIn();
-			}
+			}, pagination  : {   keys : true}
+
 		}).trigger("pause");
 	 
 		//	Handle click events

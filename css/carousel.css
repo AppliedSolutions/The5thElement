@@ -3,9 +3,10 @@
 */
 .wrapper {
 	height: 100%;
-	width: 100%;
+	/*width: 100%;*/
 	min-height: 650px;
-	min-width: 770px;
+	/*min-width: 770px;*/
+	width:770px;
 	padding-top: 1px;
 	margin: 0;
 	position: relative;
@@ -17,6 +18,7 @@
 	margin: 40px 0 0 0;
 	height: 500px;
 	overflow: hidden;
+	float: left;
 	background: url(../images/loading.gif) center center no-repeat;
 }
  
@@ -28,10 +30,11 @@
 	background-position: center right;
 	cursor: pointer;
 	border-left: 1px solid #fff;
+	overflow: hidden;
 }
  
 .slider .rslide:first-child {
-	border: none;
+	/*border: none;*/
 }
  
 .slider .rslide.active {
