@@ -44,6 +44,8 @@ $(document).ready(function(){
 	$('.worksocial1').colorbox({rel:'group13'});
 	$('.worksocial2').colorbox({rel:'group14'});
 	$('.worksocial3').colorbox({rel:'group15'});
+	$('.worksocial4').colorbox({rel:'group16'});
+	
 
 	$("#logo").click(function() {
 		scrollToSection(sections[0]);
@@ -217,13 +219,20 @@ $(document).bind('cbox_closed', function(){
 
 // On refresh of the page highlight correct menu option
 // $(window).bind('beforeunload', function(){ 
+// window.onbeforeunload=function(){	
+// 	return("Thanks");
 // 	var docTop = $(document).scrollTop();
+// 	alert(docTop);
+
 // 	for (i=0;i<sections.length;i++)
 // 	{
 // 		if(docTop >= sections[i].sectionTop && docTop < sections[i].sectionBottom )
 // 		{
+// 			alert(i);
 // 			scrollToSection(sections[i]);
 // 		}
 // 	}
-// });
+// }
+// );
+
 

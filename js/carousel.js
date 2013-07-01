@@ -42,11 +42,16 @@ $(function() {
 				// auto: {
 			 //        play: false
     // 			},
-    				onAfter: function(data) {
+				// auto : {
+    //     			button      : ".play-bnt"
+			 //    },
+
+    			onAfter: function(data) {
 					//	show active slide block
 					data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
 				}
 			},
+			pagination  : "#livingPage",
 			onCreate: function(data){
 	 			
 				//	clone images for better sliding and insert them dynamacly in slider
