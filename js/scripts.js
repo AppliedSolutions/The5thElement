@@ -1,4 +1,4 @@
-function pageSection ( sectionTop , sectionBottom, sectionName, menuName, menuStyle, menuSelectedStyle, parentList,carouselName){
+function pageSection ( sectionTop , sectionBottom, sectionName, menuName, menuStyle, menuSelectedStyle, parentList,carouselName, contentBox){
 	this.sectionTop = sectionTop;
 	this.sectionBottom = sectionBottom;
 	this.sectionName = sectionName;
@@ -7,6 +7,7 @@ function pageSection ( sectionTop , sectionBottom, sectionName, menuName, menuSt
 	this.menuSelectedStyle = menuSelectedStyle;
 	this.parentList = parentList;
 	this.carouselName = carouselName;
+	this.contentBox = contentBox;
 
 };
 
@@ -16,6 +17,7 @@ var activeSlider =null;
 
 $(document).ready(function(){
 
+	$('#HomeContents').animate({'left' : '+=10%'},2000);
 	initSections(sections);
 	$('#submenu-item').hide();
 
@@ -26,6 +28,7 @@ $(document).ready(function(){
 	$.colorbox.settings.slideshow='true';
 	$.colorbox.settings.returnFocus='false';
 	$.colorbox.settings.trapFocus='false';
+	$.colorbox.settings.current='';
 
 	$('.LivingSpaces1').colorbox({rel:'group1'});
 	$('.LivingSpaces2').colorbox({rel:'group2'});
@@ -85,6 +88,10 @@ $(document).ready(function(){
 function scrollToSection(sectionDetails) {
 	if ($(document).scrollTop() != sectionDetails.sectionTop) 
 	{
+		if(sectionDetails.contentBox != null)
+		{
+			$('#' +sectionDetails.contentBox).animate({'left' : 0},0);
+		}
 		$(sectionDetails.parentList).removeClass(sectionDetails.menuSelectedStyle);
 		$(sectionDetails.parentList).addClass(sectionDetails.menuStyle);
 		$(sectionDetails.menuName ).removeClass(sectionDetails.menuStyle);
@@ -98,6 +105,12 @@ function scrollToSection(sectionDetails) {
 		if(sectionDetails.carouselName != null)
 		{
 			$(sectionDetails.carouselName).trigger("resume");
+		}
+
+		// $(".Contents").animate({'left':0},0);
+		if(sectionDetails.contentBox != null)
+		{
+			$('#' +sectionDetails.contentBox).animate({'left' : '+=10%'},2000);
 		}
 	}
 }
@@ -134,7 +147,8 @@ $(document).bind('cbox_closed', function(){
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
-									null);
+									null,
+									"HomeContents");
 
 	sections[1] = new pageSection($("#AboutUsSection").offset().top, 
 									$("#ServicesSection").offset().top,
@@ -143,7 +157,8 @@ $(document).bind('cbox_closed', function(){
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
-									null);
+									null,
+									"AboutUsContents");
 
 	sections[2] = new pageSection($("#ServicesSection").offset().top, 
 									$("#ProjectsSection").offset().top,
@@ -152,7 +167,8 @@ $(document).bind('cbox_closed', function(){
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
-									null);
+									null,
+									"ServicesContents");
 
 	sections[3] = new pageSection($("#ProjectsSection").offset().top, 
 									$("#LivingSpacesSection").offset().top,
@@ -161,7 +177,8 @@ $(document).bind('cbox_closed', function(){
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
-									null);
+									null,
+									"ProjectsContents");
 
 	sections[4] = new pageSection($("#LivingSpacesSection").offset().top, 
 									$("#OutdoorsSection").offset().top,
@@ -170,7 +187,8 @@ $(document).bind('cbox_closed', function(){
 									"submenu-item",
 									"submenu-item-selected",
 									"ul.submenu-list > li",
-									"#LivingSpacesSlider");
+									"#LivingSpacesSlider",
+									null);
 
 	sections[5] = new pageSection($("#OutdoorsSection").offset().top, 
 									$("#WorkNSocialSpacesSection").offset().top,
@@ -179,7 +197,8 @@ $(document).bind('cbox_closed', function(){
 									"submenu-item",
 									"submenu-item-selected",
 									"ul.submenu-list > li",
-									"#OutdoorsSlider");
+									"#OutdoorsSlider",
+									null);
 
 	sections[6] = new pageSection($("#WorkNSocialSpacesSection").offset().top, 
 									$("#GetInTouchSection").offset().top,
@@ -188,7 +207,8 @@ $(document).bind('cbox_closed', function(){
 									"submenu-item",
 									"submenu-item-selected",
 									"ul.submenu-list > li",
-									"#WorkNSocialSpacesSlider");
+									"#WorkNSocialSpacesSlider",
+									null);
 
 	sections[7] = new pageSection($("#GetInTouchSection").offset().top, 
 									9999999,
@@ -197,7 +217,8 @@ $(document).bind('cbox_closed', function(){
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
-									null);
+									null,
+									"GetInTouchContents");
 }
 
 
