@@ -1,4 +1,3 @@
-
 function pageSection ( sectionTop , sectionBottom, sectionName, menuName, menuStyle, menuSelectedStyle, parentList,carouselName){
 	this.sectionTop = sectionTop;
 	this.sectionBottom = sectionBottom;
@@ -52,7 +51,7 @@ $(document).ready(function(){
 	});
 
 
-	$('#About').click(function(){
+	$('#AboutUs').click(function(){
 		scrollToSection(sections[1]);
 	});
 
@@ -129,7 +128,7 @@ $(document).bind('cbox_closed', function(){
 
 	function initSections(sections){
 	sections[0] = new pageSection($("#HomeSection").offset().top, 
-									$("#AboutSection").offset().top,
+									$("#AboutUsSection").offset().top,
 									"#HomeSection",
 									"#Home",
 									"menu-item",
@@ -137,10 +136,10 @@ $(document).bind('cbox_closed', function(){
 									"ul.topmenu > li",
 									null);
 
-	sections[1] = new pageSection($("#AboutSection").offset().top, 
+	sections[1] = new pageSection($("#AboutUsSection").offset().top, 
 									$("#ServicesSection").offset().top,
-									"#AboutSection",
-									"#About",
+									"#AboutUsSection",
+									"#AboutUs",
 									"menu-item",
 									"menu-item-selected",
 									"ul.topmenu > li",
@@ -219,20 +218,13 @@ $(document).bind('cbox_closed', function(){
 
 // On refresh of the page highlight correct menu option
 // $(window).bind('beforeunload', function(){ 
-// window.onbeforeunload=function(){	
-// 	return("Thanks");
 // 	var docTop = $(document).scrollTop();
-// 	alert(docTop);
-
 // 	for (i=0;i<sections.length;i++)
 // 	{
 // 		if(docTop >= sections[i].sectionTop && docTop < sections[i].sectionBottom )
 // 		{
-// 			alert(i);
 // 			scrollToSection(sections[i]);
 // 		}
 // 	}
-// }
-// );
-
+// });
 
