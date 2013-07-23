@@ -1,11 +1,20 @@
+/*@font-face {
+  font-family: 'Exotc350';
+  src: url('Exotc350DmBdBT.eot'); 
+  src: local('Exotc350'), url('Exotc350DmBdBT.ttf') format("truetype"); 
+}*/
 @font-face {
-  font-family: 'Exoc350';
-  src: url('Exotic350BoldBT.ttf');
+ font-family: Exotc350;
+ src: url("Exotc350DmBdBT.eot") /* EOT file for IE */
 }
-html, body{overflow:hidden;}
+@font-face {
+ font-family: Exotc350;
+ src: url("Exotc350DmBdBT.ttf") /* TTF file for CSS3 browsers */
+}
+/*html, body{overflow:hidden;}*/
 
 body  { 
-	font-family: 'Exoc350', "arial", monospace;
+	font-family: 'Exotc350', "arial", monospace;
 	text-align: justify;
  }
 
@@ -35,6 +44,7 @@ body {
 
 .forBackground{
 	min-height: 700px;
+	width:100%;
 	overflow: hidden; 
 	z-index:-1;
 }
