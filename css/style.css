@@ -84,7 +84,7 @@ body {
 	font-size: 10pt;
 	overflow: hidden;
 	padding: 25px;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 
 #Projects{
